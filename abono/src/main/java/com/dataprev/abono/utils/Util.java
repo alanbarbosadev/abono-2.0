@@ -32,6 +32,7 @@ public class Util {
     public static final String DATA_FINAL_PAGAMENTO = "31122024";
     public static final String NUMERO_SENTENCA_JUDICIAL = "00000000000000000000";
     public static final String IDENTIFICACAO_REGISTO_RODAPE = "31";
+    public static final String GET_ALL_PAYMENTS_QUERY = "SELECT * FROM tb_pagamento INNER JOIN tb_trabalhador ON tb_pagamento.fk_trabalhador_id = tb_trabalhador.trabalhador_id INNER JOIN tb_banco ON tb_pagamento.fk_banco_id = tb_banco.banco_id";
 
     public static <T> String formatField(T field, int size) {
         String fieldStr = String.valueOf(field);
